@@ -1,18 +1,21 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "canary",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.13",
-    "@types/react": "^18.0.26",
-    "typescript": "^4.9.4"
-  }
+	"private": true,
+	"scripts": {
+		"analyze": "ANALYZE=true next build",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"next": "canary",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@next/bundle-analyzer": "^13.4.9",
+		"@svgr/webpack": "^8.0.1",
+		"@types/node": "^18.11.13",
+		"@types/react": "^18.0.26",
+		"typescript": "^4.9.4"
+	}
 }
