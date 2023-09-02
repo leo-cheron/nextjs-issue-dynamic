@@ -19,7 +19,6 @@ module.exports = withBundleAnalyzer({
 	// 	},
 	// },
 	experimental: {
-		legacyBrowsers: false,
 		// externalDir: true,
 		outputFileTracingExcludes: {
 			'*': [
