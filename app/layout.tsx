@@ -14,7 +14,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-export const revalidate = 600
-export const dynamic = 'auto'
-export const runtime = 'edge'

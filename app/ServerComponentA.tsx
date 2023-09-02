@@ -1,10 +1,11 @@
-import Svg from './large.svg'
+import ClientComponentA from './ClientComponentA'
 
-export const ServerComponentA = () => {
+// import dynamic from 'next/dynamic'
+// const ClientComponentA = dynamic(() => import('./ClientComponentA'))
+
+
+export default () => {
 	return (
-		<>
-			ServerComponent
-			<Svg />
-		</>
+		<ClientComponentA />
 	)
 }

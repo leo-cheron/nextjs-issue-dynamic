@@ -1,10 +1,10 @@
-import {ClientComponent} from './ClientComponent'
+import ClientComponentB from './ClientComponentB'
 
-export const ServerComponentB = () => {
+// import dynamic from 'next/dynamic'
+// const ClientComponentB = dynamic(() => import('./ClientComponentB'))
+
+export default () => {
 	return (
-		<>
-			ServerComponent
-			<ClientComponent />
-		</>
+		<ClientComponentB />
 	)
 }

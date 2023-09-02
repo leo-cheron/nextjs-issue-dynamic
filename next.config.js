@@ -19,7 +19,6 @@ module.exports = withBundleAnalyzer({
 	// 	},
 	// },
 	experimental: {
-		// externalDir: true,
 		outputFileTracingExcludes: {
 			'*': [
 				// prettier-ignore
