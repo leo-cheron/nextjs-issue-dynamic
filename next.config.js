@@ -7,9 +7,6 @@ const withBundleAnalyzer = analyze({
 /** @type {import("next").NextConfig} */
 module.exports = withBundleAnalyzer({
 	reactStrictMode: true,
-	experimental: {
-		appDir: true,
-	},
 	webpack: (config, props) => {
 		// Grab the existing rule that handles SVG imports
 		const fileLoaderRule = config.module.rules.find((rule) =>

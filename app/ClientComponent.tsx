@@ -1,11 +1,11 @@
 'use client'
 
-import Svg from './largeB.svg'
+import Svg from './large.svg'
 
-export const ClientComponentB = () => {
+export const ClientComponent = () => {
 	return (
 		<div>
-			ClientComponentB
+			ClientComponent<br/>
 			<Svg />
 		</div>
 	)

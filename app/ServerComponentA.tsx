@@ -1,6 +1,6 @@
 import Svg from './large.svg'
 
-export const ServerComponent = () => {
+export const ServerComponentA = () => {
 	return (
 		<>
 			ServerComponent
