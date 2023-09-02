@@ -6,7 +6,7 @@ export default function ServerComponentExample () {
 	return (
 		<div>
 			ServerComponent is declared but not instanced.
-			{/* <ServerComponent />*/}
+			{false && <ServerComponent />}
 		</div>
 	)
 }
