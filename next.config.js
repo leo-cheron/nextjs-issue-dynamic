@@ -7,27 +7,6 @@ const withBundleAnalyzer = analyze({
 /** @type {import("next").NextConfig} */
 module.exports = withBundleAnalyzer({
 	reactStrictMode: true,
-	swcMinify: true,
-	// transpilePackages: ['@local/ui'],
-	// modularizeImports: {
-	// 	'@local/ui/?(((\\w*)?/?)*)': {
-	// 		transform: '@local/ui/{{ matches.[1] }}/{{ camelCase member }}/{{ member }}',
-	// 		skipDefaultConversion: true,
-	// 	},
-	// 	'@local/hooks/?(((\\w*)?/?)*)': {
-	// 		transform: '@local/hooks/{{ matches.[1] }}/{{ member }}',
-	// 	},
-	// },
-	experimental: {
-		outputFileTracingExcludes: {
-			'*': [
-				// prettier-ignore
-				'node_modules/@swc/core-linux-x64-gnu',
-				'node_modules/@swc/core-linux-x64-musl',
-				'node_modules/@esbuild/linux-x64',
-			],
-		},
-	},
 	webpack: (config, props) => {
 		// Grab the existing rule that handles SVG imports
 		const fileLoaderRule = config.module.rules.find((rule) =>
