@@ -1,5 +1,5 @@
-import DynComponentA from '../DynComponentA'
-import DynComponentB from '../DynComponentB'
+import DynComponentA from '../../DynComponentA'
+import DynComponentB from '../../DynComponentB'
 
 export default async ({params}) => {
 	params = await params
