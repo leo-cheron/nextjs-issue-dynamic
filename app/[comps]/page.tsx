@@ -1,15 +1,13 @@
-import dynamic from 'next/dynamic'
-
-const ServerComponentA = dynamic(() => import('../ServerComponentA'))
-const ServerComponentB = dynamic(() => import('../ServerComponentB'))
+import DynComponentA from '../DynComponentA'
+import DynComponentB from '../DynComponentB'
 
 export default async ({params}) => {
 	params = await params
 
 	return (
 		<div>
-			{params.comps.includes('a') ? <ServerComponentA /> : null}
-			{params.comps.includes('b') ? <ServerComponentB /> : null}
+			{params.comps.includes('a') ? <DynComponentA /> : null}
+			{params.comps.includes('b') ? <DynComponentB /> : null}
 		</div>
 	)
 }
